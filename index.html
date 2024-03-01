@@ -1,0 +1,262 @@
+<!-- Anushka Vagerwal, 201752307-->
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <!--Title of the website-->
+    <title>Anushka Vagerwal-Personal Website</title>
+    
+    <!--Meta data of the file-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Anushka Vagerwal">
+    <meta name="description" content="This is a personal webpage of Anushka Vagerwal, a MSc. Data Science & AI student at the University of Liverpool. This page includes information about her career goal, education, work experience, achievements, and skills.">
+    <meta name="keywords" content="Anushka Vagerwal, University of Liverpool, UOL, Data Scientist, Student, Career Goal, Education, Work Experience, Skills, Achievements">
+    
+    <!--Setting the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Connecting the style sheet, adding the font 'Montserrat from google fonts for aesthetics-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <!--First viewing page with self-designed logo and navigation bar-->
+    <section class="header" id="header">
+            <nav>
+                <a href="#personal-info"><img src="images/logo.png" alt="AV Logo" title="Anushka Vagerwal- Logo"></a>
+                
+                 <!--Links to the 6 sections as per the requirements of this assignment-->
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#personal-info">PERSONAL INFORMATION</a></li>
+                        <li><a href="#career-goal">CAREER GOAL</a></li>
+                        <li><a href="#education">EDUCATION</a></li>
+                        <li><a href="#work-experience">WORK EXPERIENCE</a>
+                        <li><a href="#skills">SKILLS</a>
+                        <li><a href="#achievements">ACHIEVEMENTS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+   <!--Introduction to the webpage with external hyperlink to LinkedIn profile-->
+    <div class="text-box">
+        <h3>Welcome!</h3>
+        <h1><strong>I'm Anushka Vagerwal</strong></h1>
+        <p>Explore with me the fusion of two worlds...<br> TECH and DESIGN!</p>
+        <a href="https://www.linkedin.com/in/anushka-vagerwal/" class="linkedin-btn">Let's connect on LinkedIn!</a>
+    </div>
+    </section>
+   
+<!-- Sidebar (For Mobile View) -->
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<div class="sidebar">
+    <ul>
+        <li><a href="#personal-info">PERSONAL INFORMATION</a></li>
+        <li><a href="#career-goal">CAREER GOAL</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#work-experience">WORK EXPERIENCE</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#achievements">ACHIEVEMENTS</a></li>
+    </ul>
+</div>
+
+<!--Personal Information Section With Local Image-->
+<section class="personal-info" id="personal-info">
+        <div class="info-content">
+            <div class="info-text">
+                <h2>Personal Information</h2>
+                <q>Two roads diverged in a wood and I– I took the one less traveled by, and that has made all the difference.<br> 
+                – Robert Frost</q>
+                <p>A <b>data science professional</b> at the <em>crossroads of design and the cutting edge of technology</em>.<br>
+                Pursuing an advanced degree in Data Science and AI, the journey from knitwear design showcases a seamless transition of creative insights into the digital landscape.
+                <p>Fueled by a passion for innovation, also excels in merging creative thinking with analytical prowess and coding skills to engineer impactful solutions. Eager to take on new challenges and welcomes the opportunities to provide meaningful solutions. Dedicated and goal-oriented, brings in a unique blend of creativity and technical acumen to every endeavor.</p>
+                
+                <!--In between sentence usage of external links-->
+                <p>To see my coding projects, <a href="https://devpost.com/anushkavag0707">click here</a>.</p>
+                <p>To see my design projects, <a href="https://www.behance.net/anushkavagerwal">click here</a>.</p>
+            </div>
+            
+            <!--Usage of local stored image, copy-right-free-->
+            <div class="info-image">
+                <img src="Images/Anushka-picture.jpg" alt="Anushka Vagerwal" title="It's a me, Anushka!">
+            </div>
+        </div>
+</section>
+    
+<!-- Career Goal Section using lists-->
+<section class="career-goal" id="career-goal">
+    <h2>My Career Goals</h2>
+
+    <div class="goals-row">
+        <div class="goal-col">
+            <h3>Work as a Data Scientist</h3>
+            <p>Equipped with advanced knowledge of machine learning algorithms, data analysis techniques, and programming languages such as Python and R, I want to pursue a career as a data scientist and hone my tech skills.</p>
+        </div>    
+        <div class="goal-col">
+            <h3>Explore Smart Wearables</h3>
+            <p>Explore the intersection of fashion and technology by developing smart wearable sensors and interactive accessories. The goal is to offering new functionalities, customization options, and enhance user experiences.</p>
+        </div>
+        <div class="goal-col">
+            <h3>Create a Phygital Event Planning Platform</h3>
+            <p>Intrested in creating a platform that enables event planners, marketers, and brands to design and orchestrate phygital experiences that seamlessly integrate physical and digital elements and provide tools and resources for the same.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section With Table-->
+<section class="education" id="education">
+    <h2>Education Profile</h2>
+    <p>My education profile- from school to university is depicted below.</p>
+    <div class="edu-table">
+        <table>
+            <thead>
+                <tr> <th>Institution</th> <th>Course</th> <th>Marks</th> </tr>
+            </thead>
+            <tbody>
+                <tr> <td>University of Liverpool</td> <td >MSc Data Science and AI</td> <td>Ongoing</td> </tr>
+                <tr> <td>NIFT, Bangalore</td> <td >B.Des Knitwear Design</td> <td>9 CGPA</td> </tr>
+                <tr> <td rowspan ="2">Kendriya Vidhyalaya</td> <td >A Levels</td> <td>82%</td> </tr>
+                <tr> <td>GCSE</td> <td>10 CGPA</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!--Work Experience Section with list-->
+<section class="work-experience" id="work-experience">
+    <h2>Work Experience</h2>
+    
+    <div class="experience" style =" list-style - type: square; background: #ECECEC; align-items: center;">
+        <h3>Data Science Intern and 3D Designer <br> DaveAl - Bangalore, India</h3>
+        <p>Jun 2023 - Aug 2023</p>
+        <ul>
+            <li><strong>Context:</strong> Led the creation of intelligent chat-bots, integrating tech and design with Clo3D.</li>
+            <li><strong>Action:</strong> Trained chat-bots with extensive datasets and curated digital outfits for each bot.</li>
+            <li><strong>Result:</strong> Enhanced UX. Provided key insights for Maruti’s Chatbot. Secured ABFRL project, boosting sales via a virtual hyper-realistic avatar, driving immersive customer experiences.</li>
+        </ul>
+    </div>
+    
+    <div class="experience" style =" list-style - type: square; background: #ECECEC;">
+        <h3>Graphic Designer <br> Aditya Birla Fashion and Retail Limited (ABFRL), India</h3>
+        <p>Jan 2023 - May 2023</p>
+        <ul>
+            <li><strong>Context:</strong> Conducted intensive forecasting research with TrendCurve+ for market study.</li>
+            <li><strong>Action:</strong> Curated design for oversized-tshirts for Allen Solly's SS24 and AW25 collections.</li>
+            <li><strong>Result:</strong> Introduced new trend-driven product category. Utilized Adobe Suite skills for developing graphics. Optimized manufacturing by incorporating new production methods.</li>
+        </ul>
+    </div>
+    
+    <div class="experience" style =" list-style - type: square; background: #ECECEC;">
+        <h3>Junior Fashion Design Intern <br> U.S. Polo Assn. (Arvind Fashions)</h3>
+        <p>Jun 2022 - Aug 2022</p>
+        <ul>
+            <li><strong>Context:</strong> Led team in producing premium tech-wear for USPA Sports Line.</li>
+            <li><strong>Action:</strong> Formulated creative concepts and themes using generative AI tools for graphics.</li>
+            <li><strong>Result:</strong> Implemented generative AI for innovative graphics and photoshoots. Introduced CLO3D for virtual patternmaking, reducing fabric and paper wastage.</li>
+        </ul>
+    </div>
+</section>
+    
+<!--Skills Section with the list--> 
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+    
+    <div class="skills-container">
+        <div class="technical-skills">
+            <h3>Technical Skills</h3>
+            <div class="skills-list">
+                <img src="Images/pexels-vanessa-garcia-6325888.jpg" alt="Technical Skills Image">
+                <div class="overlay">
+                    <ul>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>Database Algorithms</li>
+                        <li>Git</li>
+                        <li>Deep Learning</li>
+                        <li>Probability Statistics</li>
+                        <li>Data Visualization</li>
+                        <li>Statistical Modelling</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="soft-skills">
+            <h3>Soft Skills</h3>
+            <div class="skills-list">
+                <img src="Images/pexels-fauxels-3184433.jpg" alt="Soft Skills Image">
+                <div class="overlay">
+                    <ul>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Problem-solving</li>
+                        <li>Adaptability</li>
+                        <li>Time Management</li>
+                        <li>Leadership</li>
+                        <li>Creativity</li>
+                        <li>Emotional Intelligence</li>
+                        <li>Critical Thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <p>To know more, take a look at my <a href="https://www.linkedin.com/in/anushka-vagerwal/">LinkedIn Profile</a> to see my skills in action!</p>
+    
+</section>
+
+<!--Achievement Section with an external image-->
+<section class="achievements" id="achievements">
+    <h2>Achievements</h2>
+    
+    <div class="achievement-container">
+        <div class="achievement-image">
+            <img src="https://media.licdn.com/dms/image/D4E22AQHJIpVqcyKaug/feedshare-shrink_2048_1536/0/1699463214560?e=1711584000&v=beta&t=WyB2NE-Uou0Uy3ndJfnF9yTsUxIcWg7bsnE5dNlWCbQ" alt="Hacknotts84 '24 winners" title="Winning team of Hacknotts84 '24">
+        </div>
+        
+        <div class="achievement">
+            <div class="achievement-description">
+                <p>Won HackNotts84 hackathon by CapitalOne with 'Financial Fables' web-app for financial literacy.</p>
+            </div>
+        </div>
+        
+        <div class="achievement">
+            <div class="achievement-description">
+                <p>Awarded Meritorious Student Award at NIFT Bangalore for academic excellence and achievements.</p>
+            </div>
+        </div>
+        
+        <div class="achievement">
+            <div class="achievement-description">
+                <p>National Level Athlete- Badminton. Represented my state six times in tournaments across India.</p>
+            </div>
+        </div>
+    </div>
+    
+    <p><a href="#header">To go back to the top, click here</a>.</p>
+    
+</section>
+     
+<!--Footer having image credits and last modified tag-->
+<footer>
+    <p>Header copyright-free photo by Alex Conchillos, taken from Pexels(https://www.pexels.com/photo/dark-night-sky-with-bright-stars-3745234/)</p>
+    <p>Skill technical-skill subsection photo by Vanessa Garcia, taken from Pexel (https://www.pexels.com/photo/photo-of-person-typing-on-laptop-6325888/)</p>
+    <p>Skill soft-skill subsection photo by fauxels, taken from Pexel (https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184433/)</p>
+    
+    <p>Unless otherwise indicated, all images &copy; 2024 Anushka Vagerwal.<br>
+    
+    Last modified: <script>document.write(new Date().toLocaleString());</script></p>
+</footer>
+
+</body>
+
+</html>

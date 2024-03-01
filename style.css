@@ -1,0 +1,586 @@
+/* Anushka Vagerwal, 201752307 */
+
+/* CSS file for personal website */
+* {
+    margin: 0;
+    padding: 0;
+
+/* Taken from google fonts */    
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+}
+
+/* Header of the website */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/background.jpg);
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 0% 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 170px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.75s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.text-box h3 {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.text-box h1 {
+    font-size: 72px;
+    color: #f44336;
+    font-weight: 700;
+}
+
+.text-box p {
+    margin: 18px 0 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.linkedin-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid azure;
+    padding: 14px 36px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.linkedin-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.75s;
+}
+
+/* For desktop view (screen width greater than 700px) */
+@media screen and (min-width: 700px) {
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: none;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+}
+
+/* For mobile/smaller view (screen width less than 700px) */
+@media(max-width: 700px){
+    
+    nav img {
+        width: 130px;
+    }
+    
+    .text-box {
+    text-align: center;
+    }
+    
+    .text-box h3 {
+        font-size: 36px;
+    }
+    
+    .text-box h1 {
+        font-size: 46px;
+    }
+    
+    .text-box p {
+        font-size: 16px;
+    }
+    
+    .linkedin-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid aliceblue;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background: #333;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 1;
+    }
+
+    .sidebar ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .sidebar ul li {
+        padding: 8px 12px;
+    }
+
+    .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    #menu-toggle:checked + .menu-icon + .sidebar {
+        right: 0;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+        z-index: 1001;
+        color: #fff;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    
+    .desktop-links {
+        display: none;
+    }
+}
+
+/* Personal Information Section */
+.personal-info {
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+q {
+    font-size: 16px;
+    margin: auto;
+    text-align: left;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    padding: 10px;
+}
+.info-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-text {
+    flex: 1;
+    text-align: left;
+}
+
+.info-image {
+    flex: 1;
+    text-align: right;
+}
+
+.info-image img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Personal Information Section- For Mobile Devices */
+@media (max-width: 700px) {
+    .info-content {
+        flex-direction: column;
+    }
+
+    .info-text, .info-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .info-image img {
+        max-width: 70%;
+    }
+}
+
+/* Career Goal Section */
+.career-goal {
+    width: 100%;
+    margin: 0;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.goals-row {
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.goal-col {
+    flex-basis: 30%;
+    background: #f44336;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 16px 16px;
+    box-sizing: border-box;
+    transition: 0.75s;
+}
+
+.goal-col h3 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 580;
+    margin: 10px 0;
+}
+
+.goal-col p {
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.goal-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+}
+
+/* Personal Information Section- For Mobile Devices */
+@media(max-width: 700px) {
+    .goals-row{
+        flex-direction: column;
+    }
+    
+    .goal-col h3 {
+        font-size: 18px;
+    }
+    
+    .goal-col p {
+        font-size: 16px;
+    }
+}
+
+/* Education Section */
+.education {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  background-color: #f44336;
+  color: white;
+}
+
+td {
+  font-weight: inherit;
+}
+
+td[colspan="2"] {
+  text-align: center;
+}
+
+/*Work experience section*/
+.work-experience {
+    width: 80%;
+    margin: 70px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.work-experience h2 {
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.experience {
+    margin-bottom: 30px;
+    padding: 5%;
+    transition: transform 0.1s ease;
+}
+
+.experience:hover {
+    transform: translateY(-7px);
+}
+
+.experience h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.experience p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.experience ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience ul li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.experience ul li strong {
+    font-weight: bold;
+    color: #f44336;
+}
+
+/* Skills Section */
+.skills {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.technical-skills, .soft-skills {
+    flex-basis: 48%;
+}
+
+.technical-skills h3, .soft-skills h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    position: relative;
+}
+
+.skills-list img {
+    width: 60%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.overlay ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Skill section view for smaller screens */
+@media screen and (max-width: 700px) {
+    .skills-container {
+        flex-direction: column;
+    }
+    .technical-skills, .soft-skills {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .skills-list {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Achievements Section */
+.achievements {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.achievements h2 {
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+.achievement-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.achievement-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.achievement-image img {
+    width: 80%;
+}
+
+.achievement {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+.achievement-description {
+    background-color: #f44336;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.achievement-description p {
+    color: aliceblue;
+}
+
+.achievement:hover .achievement-description {
+    background-color: #ff7643;
+}
+
+/* Achievements section view for smaller screens */
+@media screen and (max-width: 700px) {
+    .achievement {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* Footer Section */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #152238;
+    margin-top: 30px;    
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
